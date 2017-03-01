@@ -4,7 +4,7 @@
     "description": "This extension notifies you on Jenkins build results.",
     "author": "uehara.mamoru.0888",
     "homepage_url": "https://github.com/Mitu217/jenkins-notifier",
-    "version": "0.1",
+    "version": "0.101",
     "browser_action": {
         "browser_style": false,
         "default_icon": "img/icon.png",
