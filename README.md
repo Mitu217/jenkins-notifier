@@ -1,4 +1,4 @@
- ![Jenkins Logo](img/icon48.png) Yet Another Jenkins Notifier
+ ![Jenkins Logo](src/img/icon48.png) Yet Another Jenkins Notifier
 ------------------
 
 This extension monitors Jenkins jobs and notifies you of build results with desktop notifications.
