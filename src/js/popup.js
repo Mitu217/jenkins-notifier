@@ -130,7 +130,11 @@
       });
 
       _.forEach(node.querySelectorAll('a[data-joburl]'), function (el) {
-        el.href = job.url;
+        if (job.status !== '') {
+          el.href = job.url + 'lastBuild';
+        } else {
+          el.href = job.url;
+        }
       });
     }
 

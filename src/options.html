@@ -18,38 +18,37 @@
 <body>
 
 <fieldset>
-  <legend>Options</legend>
+  <legend>設定</legend>
   <p>
-    <b>Show popup notifications:</b>
+    <b>通知設定</b>
     <br>
     <label>
       <input type="radio" name="notification" value="all" checked>
-      On every build
+      すべての通知
     </label>
     <label>
       <input type="radio" name="notification" value="unstable">
-      On every unstable build
+      失敗したビルドのみ
     </label>
     <label>
       <input type="radio" name="notification" value="none">
-      Never
+      なし
     </label>
   </p>
   <p>
-    <label><b>Refresh time:</b></label><br>
+    <label><b>通知表示時間: </b><i><b><span id="refreshTimeSpan"></span> 秒</b></i></label><br>
     <input style="width: 100%;" min="5" max="120" step="5" range-type="s" type="range" id="refreshTime">
     <br>
-    <i>Check server for changes every <b><span id="refreshTimeSpan"></span> seconds</b></i>
   </p>
 </fieldset>
 <p style="visibility: hidden" id="optionStatus">Options saved.</p>
 <fieldset>
-  <legend>Listening job build urls</legend>
-  <i>One url per line</i>
+  <legend>監視対象URL一覧</legend>
+  <i>※1行ごとにURLを追記</i>
   <br>
   <textarea id="urls"></textarea>
   <br>
-  <button id="saveUrls" type="submit">Save urls</button>
+  <button id="saveUrls" type="submit">保存</button>
 </fieldset>
 <p style="visibility: hidden" id="urlsStatus">Urls saved.</p>
 
